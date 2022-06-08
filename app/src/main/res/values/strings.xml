@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DatingApp</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA3ATW_ShERQqU-s3fFl1Spih8yMd1LUWg</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

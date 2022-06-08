@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1F2F2"
+        tools:context=".fragments.ChatBoxFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_chatbox"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_black_arrow"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci_chat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/circle_img"
+                app:layout_constraintLeft_toRightOf="@+id/iv_back_arrow"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/online_ic"
+                android:layout_marginBottom="3dp"
+                app:layout_constraintRight_toRightOf="@+id/ci_chat"
+                app:layout_constraintBottom_toBottomOf="@+id/ci_chat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_chat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="16dp"
+                android:textColor="@color/gray2"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toRightOf="@+id/ci_chat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:textSize="12dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/gray2"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toRightOf="@+id/ci_chat"
+                app:layout_constraintTop_toBottomOf="@+id/tv_chat_name" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_vcall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vcall"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tv_acall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/acall"
+                android:layout_marginTop="38dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintRight_toLeftOf="@+id/iv_vcall"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

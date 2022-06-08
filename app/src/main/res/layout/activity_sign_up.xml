@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.SignUp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_add_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_img"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_add_img">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/gray1"
+                        android:textSize="12dp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/black_border"
+                        android:drawableRight="@drawable/ic_person"
+                        android:hint="Enter Name"
+                        android:padding="15dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Birthday"
+                        android:textColor="@color/gray1"
+                        android:textSize="12dp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_celender"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/black_border"
+                        android:drawableRight="@drawable/ic_date"
+                        android:hint="DD/MM/YYYY"
+                        android:padding="15dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Gender"
+                        android:textColor="@color/gray1"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/ll_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:layout_weight="@integer/material_motion_duration_long_1"
+                            android:background="@drawable/bg_pink_border">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_male" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:padding="15dp"
+                                android:text="Male"
+                                android:textColor="@color/pink" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:layout_weight="@integer/material_motion_duration_long_1"
+                            android:background="@drawable/black_border">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_female"
+                                />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:padding="15dp"
+                                android:text="Female"
+                                android:textColor="@color/gray1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Location"
+                        android:textColor="@color/gray1"
+                        android:textSize="12dp" />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/black_border"
+                        android:drawableRight="@drawable/ic_location"
+                        android:hint="Lahore"
+                        android:padding="15dp" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Job"
+                        android:textColor="@color/gray1"
+                        android:textSize="12dp" />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/black_border"
+                        android:drawableRight="@drawable/ic_company"
+                        android:hint="Job Title"
+                        android:padding="15dp" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="College"
+                        android:textColor="@color/gray1"
+                        android:textSize="12dp" />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_clg"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/black_border"
+                        android:drawableRight="@drawable/ic_itu"
+                        android:hint="College Name"
+                        android:padding="15dp" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="About Me"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="I'm here when you need a sunny day, something
+good. We can sing together on the beach and burn
+bonfires at night with the moonlight."
+                        android:padding="10dp"
+                        android:background="@drawable/black_border"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/btnn_continue"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_btn"
+                        android:gravity="center"
+                        android:text="Continue"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                       />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
